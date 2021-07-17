@@ -1,8 +1,12 @@
 
-Basic Example:
+**HyWrap**
+Another one of those Hypixel API Wrappers.
 
 
-Bedwars:
+**Basic Example:**
+
+
+*Bedwars:*
 ```py
 import hywrap
 
@@ -11,7 +15,7 @@ key = "API KEY HERE"
 print(hywrap.bedwars("568e9c0662504e8695a809bb277baa9b", key))
 ```
 
-Skywars:
+*Skywars:*
 ```py
 import  hywrap
 
