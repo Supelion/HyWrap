@@ -1,10 +1,12 @@
-
 **HyWrap**
-Another one of those Hypixel API Wrappers.
 
+Another one of those Hypixel API Wrappers.
+<br/>
+<br/>
+<br/>
 
 **Basic Example:**
-
+<br/>
 
 *Bedwars:*
 ```py
@@ -23,6 +25,13 @@ key = "API KEY HERE"
 
 print(hywrap.skywars("568e9c0662504e8695a809bb277baa9b", key))
 ```
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 - `hywrap.bedwars` - Displays a given user's Bedwars Stats
 - `hywrap.skywars` - Display's a given user's Skywars Stats
