@@ -1,4 +1,4 @@
-**HyWrap**
+<h1>HyWrap</h1>
 
 Another one of those Hypixel API Wrappers.
 <br/>
