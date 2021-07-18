@@ -10,20 +10,24 @@ Another one of those Hypixel API Wrappers.
 
 *Bedwars:*
 ```py
-import hywrap
+from hywrap import bedwars
+import asyncio
 
-key = "API KEY HERE"
+key = "INSERT API KEY HERE"
 
-print(hywrap.bedwars("568e9c0662504e8695a809bb277baa9b", key))
+bedwarsStats = asyncio.get_event_loop().run_until_complete(bedwars("568e9c0662504e8695a809bb277baa9b", key))
+print(bedwarsStats)
 ```
 
 *Skywars:*
 ```py
-import  hywrap
+from hywrap import skywars
+import asyncio
 
-key = "API KEY HERE"
+key = "INSERT API KEY HERE"
 
-print(hywrap.skywars("568e9c0662504e8695a809bb277baa9b", key))
+skywarsStats = asyncio.get_event_loop().run_until_complete(skywars("568e9c0662504e8695a809bb277baa9b", key))
+print(skywarsStats)
 ```
 
 <br/>
