@@ -33,11 +33,11 @@ print(hywrap.skywars("568e9c0662504e8695a809bb277baa9b", key))
 <br/>
 <br/>
 
-- `hywrap.bedwars` - Displays a given user's Bedwars Stats
-- `hywrap.skywars` - Display's a given user's Skywars Stats
-- `hywrap.duels` - Display's a given user's Duels Stats.
-- `hywrap.arcade` - Display's a given user's Arcade Stats.
-- `hywrap.duels` - Display's a given user's Duels Stats.
-- `hywrap.buildBattle` - Display's a given user's Build Battle Stats.
-- `hywrap.pit` - Display's a given user's Pit Stats.
-- `hywrap.skyblock` - Display's a given user's SkyBlock Stats.
+- `hywrap.bedwars(uuid, key)` - Displays a given user's Bedwars Stats
+- `hywrap.skywars(uuid, key)` - Display's a given user's Skywars Stats
+- `hywrap.duels(uuid, key)` - Display's a given user's Duels Stats.
+- `hywrap.arcade(uuid, key)` - Display's a given user's Arcade Stats.
+- `hywrap.duels(uuid, key)` - Display's a given user's Duels Stats.
+- `hywrap.buildBattle(uuid, key)` - Display's a given user's Build Battle Stats.
+- `hywrap.pit(uuid, key)` - Display's a given user's Pit Stats.
+- `hywrap.skyblock(uuid, key)` - Display's a given user's SkyBlock Stats.
