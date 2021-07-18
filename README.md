@@ -18,6 +18,7 @@ key = "INSERT API KEY HERE"
 bedwarsStats = asyncio.get_event_loop().run_until_complete(bedwars("568e9c0662504e8695a809bb277baa9b", key))
 print(bedwarsStats)
 ```
+<br/>
 
 *Skywars:*
 ```py
@@ -29,11 +30,11 @@ key = "INSERT API KEY HERE"
 skywarsStats = asyncio.get_event_loop().run_until_complete(skywars("568e9c0662504e8695a809bb277baa9b", key))
 print(skywarsStats)
 ```
+<br/>
+<br/>
 
-<br/>
-<br/>
-<br/>
-<br/>
+**NOTE:** Because of an issue with Python, you cannot simply do `asyncio.run(hywrap.{gamemode})` on windows.
+
 <br/>
 <br/>
 
