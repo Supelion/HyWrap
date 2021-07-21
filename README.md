@@ -1,3 +1,4 @@
+
 <h1>HyWrap</h1>
 
 An Asynchronous Hypixel API Wrapper
@@ -46,3 +47,7 @@ print(skywarsStats)
 - `hywrap.buildBattle(uuid, key)` - Display's a given user's Build Battle Stats.
 - `hywrap.pit(uuid, key)` - Display's a given user's Pit Stats.
 - `hywrap.skyblock(uuid, key)` - Display's a given user's SkyBlock Stats.
+- `hywrap.boosters(key)` - Displays the active boosters on the network.
+- `hywrap.playerCount(key)` - Displays the active player count on the network including counts for seperate gamemodes.
+- `hywrap.leaderboards(key)` - Displays the leaderboards.
+- `hywrap.watchdogStats(key)` - Displays the WatchDog Statistics
