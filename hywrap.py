@@ -84,3 +84,39 @@ async def skyblock(uuid : str, hypixelapikey : str = None):
                 rawSB = await sbraw.json()
                 skyblockStats = rawSB["player"]["stats"]["SkyBlock"]
                 return skyblockStats
+
+async def boosters(hypixelapikey : str = None):
+    if hypixelapikey is None:
+        print("Please Enter a Hypixel API Key!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.hypixel.net/boosters?key={hypixelapikey}') as boosterRaw:
+                rawBoosters = await boosterRaw.json()
+                return rawBoosters
+
+async def playerCount(hypixelapikey : str = None):
+    if hypixelapikey is None:
+        print("Please Enter a Hypixel API Key!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.hypixel.net/counts?key={hypixelapikey}') as playerCountRaw:
+                count = await playerCountRaw.json()
+                return count
+
+async def leaderboards(hypixelapikey : str = None):
+    if hypixelapikey is None:
+        print("Please Enter a Hypixel API Key!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.hypixel.net/leaderboards?key={hypixelapikey}') as leaderboardsRaw:
+                leaderBoards = await leaderboardsRaw.json()
+                return leaderBoards
+
+async def watchdogStats(hypixelapikey : str = None):
+    if hypixelapikey is None:
+        print("Please Enter a Hypixel API Key!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.hypixel.net/punishmentstats?key={hypixelapikey}') as watchdogRaw:
+                watchdog = await watchdogRaw.json()
+                return watchdog
