@@ -39,6 +39,7 @@ print(skywarsStats)
 <br/>
 <br/>
 
+- `hywrap.player(uuid, key)` - Displays the entire API page for a user.
 - `hywrap.bedwars(uuid, key)` - Displays a given user's Bedwars Stats
 - `hywrap.skywars(uuid, key)` - Display's a given user's Skywars Stats
 - `hywrap.duels(uuid, key)` - Display's a given user's Duels Stats.
