@@ -1,5 +1,16 @@
 import aiohttp
 
+async def player(uuid : str = None, hypixelapikey : str = None):
+    if hypixelapikey is None:
+        print("Please Enter a Hypixel API Key!")
+    if uuid is None:
+        print("Please specify a UUID!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.hypixel.net/player?key={hypixelapikey}&uuid={uuid}') as profileRaw:
+                player = await profileRaw.json()
+                return player
+
 async def bedwars(uuid : str, hypixelapikey : str = None):
     if hypixelapikey is None:
         print("Please Enter a Hypixel API Key!")
