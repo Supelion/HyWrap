@@ -59,3 +59,4 @@ print(skywarsStats)
 - `hywrap.friends(uuid, key)` - Returns the friends API endpoint of a player.
 - `hywrap.key(key)` - Returns the provided API key's information.
 - `hywrap.checkUUID(username)` - Returns the UUID of a provided player's name.
+- `hywrap.mojangData(username)` - Returns the entire Mojang API page of a provided player's name.
