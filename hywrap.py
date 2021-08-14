@@ -223,3 +223,13 @@ async def checkUUID(name : str):
                 r = await f.json()
                 uuid = r["id"]
                 return uuid
+
+# Returns the entire mojang API page of a specified player
+async def mojangData(name : str):
+    if name is None:
+        print("Please specify a UUID!")
+    else:
+        async with aiohttp.ClientSession() as cs:
+            async with cs.get(f'https://api.mojang.com/users/profiles/minecraft/{name}') as f:
+                r = await f.json()
+                return r
