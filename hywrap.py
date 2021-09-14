@@ -155,6 +155,19 @@ async def guild(uuid : str, hypixelapikey : str = None):
                 guild = await guildRaw.json()
                 return guild
 
+# Returns the player's rank, its a little complicated, but gets the job done :D
+async def rank(playerdata):
+    try:
+        return playerdata["player"]["rank"]
+    except:
+        try:
+            return playerdata["player"]["monthlyPackageRank"]
+        except:
+            try:
+                return playerdata["player"]["newPackageRank"]
+            except:
+                return None
+
 # Returns the recent games of a player
 async def recentGames(uuid : str, hypixelapikey : str = None):
     if hypixelapikey is None:
