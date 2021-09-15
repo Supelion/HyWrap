@@ -156,13 +156,13 @@ async def guild(uuid : str, hypixelapikey : str = None):
                 return guild
 
 # Returns the player's rank, its a little complicated, but gets the job done :D
-async def rank(playerdata):
+async def rank(playerdata : dict):
     try:
         return playerdata["player"]["rank"]
     except:
-        try:
+        if playerdata["player"].get("monthlyPackageRank") and playerdata["player"].get("monthlyPackageRank") != "NONE":
             return playerdata["player"]["monthlyPackageRank"]
-        except:
+        else:
             try:
                 return playerdata["player"]["newPackageRank"]
             except:
